@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FFE36AD82219D640008FCD8F /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE36AD72219D640008FCD8F /* WaveView.swift */; };
 		FFEA3FA22219D1A70031A212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEA3FA12219D1A70031A212 /* AppDelegate.swift */; };
 		FFEA3FA42219D1A70031A212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEA3FA32219D1A70031A212 /* ViewController.swift */; };
-		FFEA3FA72219D1A70031A212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFEA3FA52219D1A70031A212 /* Main.storyboard */; };
 		FFEA3FA92219D1AA0031A212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEA3FA82219D1AA0031A212 /* Assets.xcassets */; };
 		FFEA3FAC2219D1AA0031A212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFEA3FAA2219D1AA0031A212 /* LaunchScreen.storyboard */; };
 		FFEA3FB72219D1AA0031A212 /* WaveSiriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEA3FB62219D1AA0031A212 /* WaveSiriTests.swift */; };
@@ -34,10 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FFE36AD72219D640008FCD8F /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		FFEA3F9E2219D1A70031A212 /* WaveSiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveSiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEA3FA12219D1A70031A212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFEA3FA32219D1A70031A212 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FFEA3FA62219D1A70031A212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFEA3FA82219D1AA0031A212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFEA3FAB2219D1AA0031A212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFEA3FAD2219D1AA0031A212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,10 +99,10 @@
 			children = (
 				FFEA3FA12219D1A70031A212 /* AppDelegate.swift */,
 				FFEA3FA32219D1A70031A212 /* ViewController.swift */,
-				FFEA3FA52219D1A70031A212 /* Main.storyboard */,
 				FFEA3FA82219D1AA0031A212 /* Assets.xcassets */,
 				FFEA3FAA2219D1AA0031A212 /* LaunchScreen.storyboard */,
 				FFEA3FAD2219D1AA0031A212 /* Info.plist */,
+				FFE36AD72219D640008FCD8F /* WaveView.swift */,
 			);
 			path = WaveSiri;
 			sourceTree = "<group>";
@@ -231,7 +231,6 @@
 			files = (
 				FFEA3FAC2219D1AA0031A212 /* LaunchScreen.storyboard in Resources */,
 				FFEA3FA92219D1AA0031A212 /* Assets.xcassets in Resources */,
-				FFEA3FA72219D1A70031A212 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +257,7 @@
 			files = (
 				FFEA3FA42219D1A70031A212 /* ViewController.swift in Sources */,
 				FFEA3FA22219D1A70031A212 /* AppDelegate.swift in Sources */,
+				FFE36AD82219D640008FCD8F /* WaveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +293,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FFEA3FA52219D1A70031A212 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FFEA3FA62219D1A70031A212 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FFEA3FAA2219D1AA0031A212 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,7 +424,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HV5V7KBQHK;
 				INFOPLIST_FILE = WaveSiri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,6 +434,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dfg.WaveSiri;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,7 +444,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HV5V7KBQHK;
 				INFOPLIST_FILE = WaveSiri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +454,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dfg.WaveSiri;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
